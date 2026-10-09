@@ -1,0 +1,12 @@
+[app]
+#min-support at load : {"ignored":false,"role":"slider","name":"Minimum support","value":1,"valuetext":"1"}
+  moved to 1.5 : {"ignored":false,"role":"slider","name":"Minimum support","value":1.5,"valuetext":"1.5"}
+  moved to 2   : {"ignored":false,"role":"slider","name":"Minimum support","value":2,"valuetext":"2"}
+  moved to 6.5 : {"ignored":false,"role":"slider","name":"Minimum support","value":6.5,"valuetext":"6.5"}
+  distinct accessible names while moving: 1 ["Minimum support"]
+  readout #min-support-value: {"ignored":false,"role":"status","name":"","live":"polite"} | aria-live attr: null | aria-hidden attr: null | visible text: 6.5%
+#min-confidence at load : {"ignored":false,"role":"slider","name":"Minimum confidence","value":30,"valuetext":"30"}
+  moved to 35  : {"ignored":false,"role":"slider","name":"Minimum confidence","value":35,"valuetext":"35"}
+  moved to 85  : {"ignored":false,"role":"slider","name":"Minimum confidence","value":85,"valuetext":"85"}
+  distinct accessible names while moving: 1 ["Minimum confidence"]
+  readout #min-confidence-value: {"ignored":false,"role":"status","name":"","live":"polite"} | aria-live attr: null | aria-hidden attr: null | visible text: 85%

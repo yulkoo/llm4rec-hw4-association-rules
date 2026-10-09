@@ -1,0 +1,18 @@
+200 | https://doi.org/10.1145/170035.170072
+      -> https://dl.acm.org/doi/10.1145/170035.170072
+      title: Один момент…
+200 | https://doi.org/10.1145/335191.335372
+      -> https://dl.acm.org/doi/10.1145/335191.335372
+      title: Один момент…
+200 | https://doi.org/10.1145/253260.253325
+      -> https://portal.acm.org/citation.cfm?doid=253260.253325
+      title: Один момент…
+200 | https://doi.org/10.1145/253260.253327
+      -> https://dl.acm.org/citation.cfm?doid=253260.253327
+      title: Один момент…
+200 | https://doi.org/10.1109/69.846291
+      -> https://ieeexplore.ieee.org/document/846291
+      title: Scalable algorithms for association mining | IEEE Journals & Magazine | IEEE Xplore
+200 | https://doi.org/10.1109/MLSP.2016.7738886
+      -> https://ieeexplore.ieee.org/document/7738886
+      title: ITEM2VEC: Neural item embedding for collaborative filtering | IEEE Conference Publication | IEEE Xplore

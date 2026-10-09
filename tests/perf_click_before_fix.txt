@@ -1,0 +1,3 @@
+[app]
+0.5% / 10%: {"handlerMs":1800,"clickToPaintedMs":3026,"longestFrozenMs":3017,"statusesPainted":["Dataset ready: 17,080 baskets, 3,653 dis","Done — 19058 rule(s) at support ≥ 0.5% a"],"rows":19058,"status":"Done — 19058 rule(s) at support ≥ 0.5% and confidence ≥ 10%."}
+1% / 30%: {"handlerMs":658,"clickToPaintedMs":721,"longestFrozenMs":717,"statusesPainted":["Dataset ready: 17,080 baskets, 3,653 dis","Done — 950 rule(s) at support ≥ 1.0% and"],"rows":950,"status":"Done — 950 rule(s) at support ≥ 1.0% and confidence ≥ 30%."}

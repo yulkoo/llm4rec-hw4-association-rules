@@ -1,0 +1,21 @@
+MISMATCH {'s': 0.5, 'c': 20, 'itemsets': 5255, 'rules': 14031, 'liftLE1': 0} 5255 14028
+MISMATCH {'s': 0.5, 'c': 40, 'itemsets': 5255, 'rules': 8020, 'liftLE1': 0} 5255 8009
+MISMATCH {'s': 0.5, 'c': 45, 'itemsets': 5255, 'rules': 6817, 'liftLE1': 0} 5255 6813
+MISMATCH {'s': 0.5, 'c': 55, 'itemsets': 5255, 'rules': 4820, 'liftLE1': 0} 5255 4818
+MISMATCH {'s': 0.5, 'c': 65, 'itemsets': 5255, 'rules': 3166, 'liftLE1': 0} 5255 3163
+MISMATCH {'s': 0.5, 'c': 75, 'itemsets': 5255, 'rules': 1692, 'liftLE1': 0} 5255 1691
+MISMATCH {'s': 0.5, 'c': 80, 'itemsets': 5255, 'rules': 1140, 'liftLE1': 0} 5255 1138
+MISMATCH {'s': 0.5, 'c': 90, 'itemsets': 5255, 'rules': 386, 'liftLE1': 0} 5255 385
+MISMATCH {'s': 1, 'c': 20, 'itemsets': 1219, 'rules': 1303, 'liftLE1': 0} 1219 1301
+MISMATCH {'s': 1, 'c': 65, 'itemsets': 1219, 'rules': 166, 'liftLE1': 0} 1219 165
+380 slider positions compared, mismatches: 10
+support 1.0% conf 20%: mlxtend drops 2 rule(s); exactly on the boundary: 2; e.g. joint/count(A) = 173/865, mlxtend confidence = 0.19999999999999998
+support 1.0% conf 65%: mlxtend drops 1 rule(s); exactly on the boundary: 1; e.g. joint/count(A) = 182/280, mlxtend confidence = 0.6499999999999999
+support 0.5% conf 20%: mlxtend drops 3 rule(s); exactly on the boundary: 3; e.g. joint/count(A) = 173/865, mlxtend confidence = 0.19999999999999998
+support 0.5% conf 40%: mlxtend drops 11 rule(s); exactly on the boundary: 11; e.g. joint/count(A) = 98/245, mlxtend confidence = 0.39999999999999997
+support 0.5% conf 45%: mlxtend drops 4 rule(s); exactly on the boundary: 4; e.g. joint/count(A) = 90/200, mlxtend confidence = 0.44999999999999996
+support 0.5% conf 55%: mlxtend drops 2 rule(s); exactly on the boundary: 2; e.g. joint/count(A) = 110/200, mlxtend confidence = 0.5499999999999999
+support 0.5% conf 65%: mlxtend drops 3 rule(s); exactly on the boundary: 3; e.g. joint/count(A) = 182/280, mlxtend confidence = 0.6499999999999999
+support 0.5% conf 75%: mlxtend drops 1 rule(s); exactly on the boundary: 1; e.g. joint/count(A) = 99/132, mlxtend confidence = 0.7499999999999999
+support 0.5% conf 80%: mlxtend drops 2 rule(s); exactly on the boundary: 2; e.g. joint/count(A) = 116/145, mlxtend confidence = 0.7999999999999999
+support 0.5% conf 90%: mlxtend drops 1 rule(s); exactly on the boundary: 1; e.g. joint/count(A) = 90/100, mlxtend confidence = 0.8999999999999999

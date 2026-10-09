@@ -1,0 +1,20 @@
+keys: ['N_BASKETS', 'N_ITEMS', 'stocks', 'descriptions', 'baskets', 'dataset_provenance']
+provenance: UCI Online Retail (dataset_id 352). Daqing Chen, Sai Liang Sain, Kun Guo (2012). 541,909 raw rows cleaned to 384,911 rows and 17,080 baskets by removing cancellations, negative quantities/prices, blank descriptions, non-product codes, and single-item baskets.
+N_BASKETS 17080 len(baskets) 17080 | N_ITEMS 3653 len(stocks) 3653 len(descriptions) 3653
+index range ok: True | used item ids: 3653
+baskets with repeated item: 0 | baskets with <2 items: 0
+duplicate stock codes: 0 | case-insensitive duplicates: 0 | codes with lower case / spaces: []
+descriptions shared by >1 stock code: 26 ( 54 codes )
+codes not of the form 5 digits + up to 2 letters: 0 []
+descriptions that look like non-products: [('23243', 'SET OF TEA COFFEE SUGAR TINS PANTRY'), ('22970', 'LONDON BUS COFFEE MUG'), ('21216', 'SET 3 RETROSPOT TEA,COFFEE,SUGAR'), ('22971', 'QUEENS GUARD COFFEE MUG'), ('22303', 'COFFEE MUG APPLES DESIGN'), ('22302', 'COFFEE MUG PEARS DESIGN'), ('22301', 'COFFEE MUG CAT + BIRD DESIGN'), ('22300', 'COFFEE MUG DOG + BALL DESIGN'), ('37370', 'RETRO COFFEE MUGS ASSORTED'), ('21407', 'BROWN CHECK CAT DOORSTOP'), ('22932', 'BAKING MOULD TOFFEE CUP CHOCOLATE'), ('37342', 'POLKADOT COFFEE CUP & SAUCER PINK'), ('21399', 'BLUE POLKADOT COFFEE MUG'), ('85159B', 'WHITE TEA,COFFEE,SUGAR JARS'), ('23099', 'FRENCH CARRIAGE LANTERN'), ('35810A', 'ENAMEL PINK COFFEE CONTAINER'), ('21398', 'RED POLKADOT COFFEE MUG'), ('22304', 'COFFEE MUG BLUE PAISLEY DESIGN'), ('85159A', 'BLACK TEA,COFFEE,SUGAR JARS'), ('22305', 'COFFEE MUG PINK PAISLEY DESIGN'), ('72122', 'COFFEE SCENT PILLAR CANDLE'), ('23413', 'VINTAGE COFFEE GRINDER BOX'), ('84795B', 'SUNSET CHECK HAMMOCK'), ('20748', 'KENSINGTON COFFEE SET'), ('23466', 'TUSCAN VILLA DOVECOTE BIRD FEEDER'), ('35810B', 'ENAMEL BLUE RIM COFFEE CONTAINER'), ('21662', 'VINTAGE GLASS COFFEE CADDY'), ('23465', 'TUSCAN VILLA BIRD FEEDER'), ('20847', 'ZINC HEART LATTICE CHARGER LARGE'), ('47367B', 'PAIR PADDED HANGERS PINK CHECK'), ('20848', 'ZINC HEART LATTICE CHARGER SMALL'), ('85168B', 'BLACK BAROQUE CARRIAGE CLOCK'), ('62043B', 'BLUE CHECK BAG W HANDLE 34X20CM'), ('44091A', 'BLUE CRUSOE CHECK LAMPSHADE')]
+items ordered by descending basket count (as the generator states): True
+
+raw rows 541909
+labels: description != most frequent raw description for 0 codes; description never used for that code in raw: 0 []
+codes with more than one distinct raw description: 203 | examples: [('16156L', ['WRAP CAROUSEL', 'WRAP, CAROUSEL']), ('17107D', ['FLOWER FAIRY 5 DRAWER LINERS', 'FLOWER FAIRY 5 SUMMER DRAW LINERS', "FLOWER FAIRY,5 SUMMER B'DRAW LINERS"]), ('20622', ['VIP PASSPORT COVER', 'VIPPASSPORT COVER'])]
+
+invoices with >1 CustomerID: 0 | with >1 calendar date: 0 | with >1 timestamp: 30 | with >1 country: 0
+filters, in order: [('cancellation/adjustment invoice (C/A)', 9291), ('blank description', 1454), ('quantity <= 0', 474), ('unit price <= 0', 587), ('blank CustomerID (guest checkout)', 132219), ('non-product line', 1640)] | rows left 396244
+distinct (invoice, item) pairs: 386233 | invoices: 18402 | single-item invoices dropped: 1322 | pairs kept: 384911
+guest-checkout invoices removed: 1427 rows 132219
+baskets whose item set is repeated elsewhere: 337 | distinct repeated sets: 132

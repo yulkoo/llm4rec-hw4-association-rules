@@ -1,0 +1,868 @@
+{
+ "basket_size": {
+  "median": 16,
+  "mean": 22.54,
+  "max": 540,
+  "p90": 48,
+  "strata": [
+   {
+    "bin": "2-5",
+    "n": 2640
+   },
+   {
+    "bin": "6-10",
+    "n": 2916
+   },
+   {
+    "bin": "11-20",
+    "n": 4906
+   },
+   {
+    "bin": "21-40",
+    "n": 4233
+   },
+   {
+    "bin": "41-80",
+    "n": 1948
+   },
+   {
+    "bin": "81-1000000",
+    "n": 437
+   }
+  ]
+ },
+ "top_items": [
+  {
+   "stock": "85123A",
+   "name": "WHITE HANGING HEART T-LIGHT HOLDER",
+   "count": 1959,
+   "share": 0.11469555035128806
+  },
+  {
+   "stock": "22423",
+   "name": "REGENCY CAKESTAND 3 TIER",
+   "count": 1681,
+   "share": 0.0984192037470726
+  },
+  {
+   "stock": "85099B",
+   "name": "JUMBO BAG RED RETROSPOT",
+   "count": 1584,
+   "share": 0.09274004683840749
+  }
+ ],
+ "useful": {
+  "a": [
+   "22697"
+  ],
+  "b": [
+   "22699"
+  ],
+  "a_name": [
+   "GREEN REGENCY TEACUP AND SAUCER"
+  ],
+  "b_name": [
+   "ROSES REGENCY TEACUP AND SAUCER"
+  ],
+  "forward": {
+   "joint": 541,
+   "countA": 691,
+   "countB": 780,
+   "n": 17080,
+   "support": 0.03167447306791569,
+   "confidence": 0.7829232995658466,
+   "lift": 17.14401276485213
+  },
+  "reverse": {
+   "joint": 541,
+   "countA": 780,
+   "countB": 691,
+   "n": 17080,
+   "support": 0.03167447306791569,
+   "confidence": 0.6935897435897436,
+   "lift": 17.14401276485213
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 38,
+     "countB": 39,
+     "joint": 21,
+     "expected": 0.56,
+     "lift": 37.409
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 76,
+     "countB": 74,
+     "joint": 57,
+     "expected": 1.93,
+     "lift": 29.554
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 160,
+     "countB": 190,
+     "joint": 119,
+     "expected": 6.2,
+     "lift": 19.204
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 228,
+     "countB": 265,
+     "joint": 191,
+     "expected": 14.27,
+     "lift": 13.381
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 143,
+     "countB": 158,
+     "joint": 115,
+     "expected": 11.6,
+     "lift": 9.915
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 46,
+     "countB": 54,
+     "joint": 38,
+     "expected": 5.68,
+     "lift": 6.685
+    }
+   ],
+   "expected": 40.24,
+   "adjusted_lift": 13.443
+  },
+  "expected_if_independent": 31.56,
+  "periods": [
+   {
+    "period": "2010-12..2011-05",
+    "joint": 270,
+    "countA": 330,
+    "countB": 376,
+    "n": 6804,
+    "support": 0.0397,
+    "confidence": 0.8182,
+    "lift": 14.8056
+   },
+   {
+    "period": "2011-06..2011-12",
+    "joint": 271,
+    "countA": 361,
+    "countB": 404,
+    "n": 10276,
+    "support": 0.0264,
+    "confidence": 0.7507,
+    "lift": 19.0943
+   },
+   {
+    "period": "Q1 Dec-Feb",
+    "joint": 97,
+    "countA": 124,
+    "countB": 138,
+    "n": 3104,
+    "support": 0.0312,
+    "confidence": 0.7823,
+    "lift": 17.5951
+   },
+   {
+    "period": "Q2 Mar-May",
+    "joint": 173,
+    "countA": 206,
+    "countB": 238,
+    "n": 3700,
+    "support": 0.0468,
+    "confidence": 0.8398,
+    "lift": 13.0558
+   },
+   {
+    "period": "Q3 Jun-Aug",
+    "joint": 113,
+    "countA": 151,
+    "countB": 167,
+    "n": 3677,
+    "support": 0.0307,
+    "confidence": 0.7483,
+    "lift": 16.477
+   },
+   {
+    "period": "Q4 Sep-Dec9",
+    "joint": 158,
+    "countA": 210,
+    "countB": 237,
+    "n": 6599,
+    "support": 0.0239,
+    "confidence": 0.7524,
+    "lift": 20.9492
+   }
+  ],
+  "customers": {
+   "joint_baskets": 541,
+   "distinct_customers": 311,
+   "top_customer_baskets": 26,
+   "top5_baskets": 72,
+   "customers_with_1_basket": 213,
+   "antecedent_customers": 387
+  }
+ },
+ "misleading": {
+  "a": [
+   "21754"
+  ],
+  "b": [
+   "85123A"
+  ],
+  "a_name": [
+   "HOME BUILDING BLOCK WORD"
+  ],
+  "b_name": [
+   "WHITE HANGING HEART T-LIGHT HOLDER"
+  ],
+  "forward": {
+   "joint": 209,
+   "countA": 690,
+   "countB": 1959,
+   "n": 17080,
+   "support": 0.012236533957845434,
+   "confidence": 0.30289855072463767,
+   "lift": 2.6408919072878057
+  },
+  "reverse": {
+   "joint": 209,
+   "countA": 1959,
+   "countB": 690,
+   "n": 17080,
+   "support": 0.012236533957845434,
+   "confidence": 0.1066870852475753,
+   "lift": 2.6408919072878057
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 15,
+     "countB": 97,
+     "joint": 0,
+     "expected": 0.55,
+     "lift": null
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 53,
+     "countB": 201,
+     "joint": 8,
+     "expected": 3.65,
+     "lift": 2.19
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 181,
+     "countB": 494,
+     "joint": 38,
+     "expected": 18.23,
+     "lift": 2.085
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 226,
+     "countB": 570,
+     "joint": 73,
+     "expected": 30.43,
+     "lift": 2.399
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 158,
+     "countB": 440,
+     "joint": 66,
+     "expected": 35.69,
+     "lift": 1.849
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 57,
+     "countB": 157,
+     "joint": 24,
+     "expected": 20.48,
+     "lift": 1.172
+    }
+   ],
+   "expected": 109.03,
+   "adjusted_lift": 1.917
+  },
+  "expected_if_independent": 79.14,
+  "periods": [
+   {
+    "period": "2010-12..2011-05",
+    "joint": 121,
+    "countA": 364,
+    "countB": 990,
+    "n": 6804,
+    "support": 0.0178,
+    "confidence": 0.3324,
+    "lift": 2.2846
+   },
+   {
+    "period": "2011-06..2011-12",
+    "joint": 88,
+    "countA": 326,
+    "countB": 969,
+    "n": 10276,
+    "support": 0.0086,
+    "confidence": 0.2699,
+    "lift": 2.8626
+   },
+   {
+    "period": "Q1 Dec-Feb",
+    "joint": 62,
+    "countA": 187,
+    "countB": 476,
+    "n": 3104,
+    "support": 0.02,
+    "confidence": 0.3316,
+    "lift": 2.162
+   },
+   {
+    "period": "Q2 Mar-May",
+    "joint": 59,
+    "countA": 177,
+    "countB": 514,
+    "n": 3700,
+    "support": 0.0159,
+    "confidence": 0.3333,
+    "lift": 2.3995
+   },
+   {
+    "period": "Q3 Jun-Aug",
+    "joint": 42,
+    "countA": 139,
+    "countB": 389,
+    "n": 3677,
+    "support": 0.0114,
+    "confidence": 0.3022,
+    "lift": 2.8561
+   },
+   {
+    "period": "Q4 Sep-Dec9",
+    "joint": 46,
+    "countA": 187,
+    "countB": 580,
+    "n": 6599,
+    "support": 0.007,
+    "confidence": 0.246,
+    "lift": 2.7988
+   }
+  ],
+  "customers": {
+   "joint_baskets": 209,
+   "distinct_customers": 126,
+   "top_customer_baskets": 11,
+   "top5_baskets": 37,
+   "customers_with_1_basket": 85,
+   "antecedent_customers": 360
+  }
+ },
+ "herb": {
+  "a": [
+   "22916"
+  ],
+  "b": [
+   "22917"
+  ],
+  "a_name": [
+   "HERB MARKER THYME"
+  ],
+  "b_name": [
+   "HERB MARKER ROSEMARY"
+  ],
+  "forward": {
+   "joint": 176,
+   "countA": 186,
+   "countB": 190,
+   "n": 17080,
+   "support": 0.010304449648711944,
+   "confidence": 0.946236559139785,
+   "lift": 85.06168647425014
+  },
+  "reverse": {
+   "joint": 176,
+   "countA": 190,
+   "countB": 186,
+   "n": 17080,
+   "support": 0.010304449648711944,
+   "confidence": 0.9263157894736842,
+   "lift": 85.06168647425014
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 0,
+     "countB": 0,
+     "joint": 0,
+     "expected": 0.0,
+     "lift": null
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 7,
+     "countB": 7,
+     "joint": 7,
+     "expected": 0.02,
+     "lift": 416.571
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 35,
+     "countB": 34,
+     "joint": 32,
+     "expected": 0.24,
+     "lift": 131.926
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 57,
+     "countB": 60,
+     "joint": 54,
+     "expected": 0.81,
+     "lift": 66.837
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 58,
+     "countB": 61,
+     "joint": 55,
+     "expected": 1.82,
+     "lift": 30.283
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 29,
+     "countB": 28,
+     "joint": 28,
+     "expected": 1.86,
+     "lift": 15.069
+    }
+   ],
+   "expected": 4.74,
+   "adjusted_lift": 37.118
+  },
+  "expected_if_independent": 2.07
+ },
+ "party": {
+  "a": [
+   "21080",
+   "21086"
+  ],
+  "b": [
+   "21094"
+  ],
+  "a_name": [
+   "SET/20 RED RETROSPOT PAPER NAPKINS",
+   "SET/6 RED SPOTTY PAPER CUPS"
+  ],
+  "b_name": [
+   "SET/6 RED SPOTTY PAPER PLATES"
+  ],
+  "forward": {
+   "joint": 177,
+   "countA": 192,
+   "countB": 325,
+   "n": 17080,
+   "support": 0.010362997658079626,
+   "confidence": 0.921875,
+   "lift": 48.448076923076925
+  },
+  "reverse": {
+   "joint": 177,
+   "countA": 325,
+   "countB": 192,
+   "n": 17080,
+   "support": 0.010362997658079626,
+   "confidence": 0.5446153846153846,
+   "lift": 48.448076923076925
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 4,
+     "countB": 11,
+     "joint": 4,
+     "expected": 0.02,
+     "lift": 240.0
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 8,
+     "countB": 23,
+     "joint": 6,
+     "expected": 0.06,
+     "lift": 95.087
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 48,
+     "countB": 80,
+     "joint": 42,
+     "expected": 0.78,
+     "lift": 53.659
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 61,
+     "countB": 102,
+     "joint": 57,
+     "expected": 1.47,
+     "lift": 38.779
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 49,
+     "countB": 74,
+     "joint": 47,
+     "expected": 1.86,
+     "lift": 25.25
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 22,
+     "countB": 35,
+     "joint": 21,
+     "expected": 1.76,
+     "lift": 11.918
+    }
+   ],
+   "expected": 5.96,
+   "adjusted_lift": 29.719
+  },
+  "expected_if_independent": 3.65
+ },
+ "lift_below_1": [
+  {
+   "a": [
+    "22727"
+   ],
+   "b": [
+    "85123A"
+   ],
+   "joint": 98,
+   "ca": 877,
+   "cb": 1959,
+   "support": 0.005737704918032787,
+   "confidence": 0.11174458380843785,
+   "lift": 0.9742713075283912
+  },
+  {
+   "a": [
+    "22726"
+   ],
+   "b": [
+    "85123A"
+   ],
+   "joint": 89,
+   "ca": 784,
+   "cb": 1959,
+   "support": 0.005210772833723653,
+   "confidence": 0.11352040816326531,
+   "lift": 0.989754247794064
+  }
+ ],
+ "below1_22727": {
+  "a": [
+   "22727"
+  ],
+  "b": [
+   "85123A"
+  ],
+  "a_name": [
+   "ALARM CLOCK BAKELIKE RED"
+  ],
+  "b_name": [
+   "WHITE HANGING HEART T-LIGHT HOLDER"
+  ],
+  "forward": {
+   "joint": 98,
+   "countA": 877,
+   "countB": 1959,
+   "n": 17080,
+   "support": 0.005737704918032787,
+   "confidence": 0.11174458380843785,
+   "lift": 0.9742713075283912
+  },
+  "reverse": {
+   "joint": 98,
+   "countA": 1959,
+   "countB": 877,
+   "n": 17080,
+   "support": 0.005737704918032787,
+   "confidence": 0.050025523226135786,
+   "lift": 0.9742713075283913
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 23,
+     "countB": 97,
+     "joint": 0,
+     "expected": 0.85,
+     "lift": null
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 81,
+     "countB": 201,
+     "joint": 3,
+     "expected": 5.58,
+     "lift": 0.537
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 210,
+     "countB": 494,
+     "joint": 14,
+     "expected": 21.15,
+     "lift": 0.662
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 296,
+     "countB": 570,
+     "joint": 36,
+     "expected": 39.86,
+     "lift": 0.903
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 201,
+     "countB": 440,
+     "joint": 29,
+     "expected": 45.4,
+     "lift": 0.639
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 66,
+     "countB": 157,
+     "joint": 16,
+     "expected": 23.71,
+     "lift": 0.675
+    }
+   ],
+   "expected": 136.54,
+   "adjusted_lift": 0.718
+  },
+  "expected_if_independent": 100.59
+ },
+ "below1_22726": {
+  "a": [
+   "22726"
+  ],
+  "b": [
+   "85123A"
+  ],
+  "a_name": [
+   "ALARM CLOCK BAKELIKE GREEN"
+  ],
+  "b_name": [
+   "WHITE HANGING HEART T-LIGHT HOLDER"
+  ],
+  "forward": {
+   "joint": 89,
+   "countA": 784,
+   "countB": 1959,
+   "n": 17080,
+   "support": 0.005210772833723653,
+   "confidence": 0.11352040816326531,
+   "lift": 0.989754247794064
+  },
+  "reverse": {
+   "joint": 89,
+   "countA": 1959,
+   "countB": 784,
+   "n": 17080,
+   "support": 0.005210772833723653,
+   "confidence": 0.04543134252169474,
+   "lift": 0.9897542477940641
+  },
+  "size_adjusted": {
+   "strata": [
+    {
+     "bin": "2-5",
+     "n": 2640,
+     "countA": 23,
+     "countB": 97,
+     "joint": 1,
+     "expected": 0.85,
+     "lift": 1.183
+    },
+    {
+     "bin": "6-10",
+     "n": 2916,
+     "countA": 73,
+     "countB": 201,
+     "joint": 2,
+     "expected": 5.03,
+     "lift": 0.397
+    },
+    {
+     "bin": "11-20",
+     "n": 4906,
+     "countA": 180,
+     "countB": 494,
+     "joint": 13,
+     "expected": 18.12,
+     "lift": 0.717
+    },
+    {
+     "bin": "21-40",
+     "n": 4233,
+     "countA": 270,
+     "countB": 570,
+     "joint": 30,
+     "expected": 36.36,
+     "lift": 0.825
+    },
+    {
+     "bin": "41-80",
+     "n": 1948,
+     "countA": 176,
+     "countB": 440,
+     "joint": 22,
+     "expected": 39.75,
+     "lift": 0.553
+    },
+    {
+     "bin": "81-max",
+     "n": 437,
+     "countA": 62,
+     "countB": 157,
+     "joint": 21,
+     "expected": 22.27,
+     "lift": 0.943
+    }
+   ],
+   "expected": 122.39,
+   "adjusted_lift": 0.727
+  },
+  "expected_if_independent": 89.92
+ },
+ "tiny_count_trap": {
+  "pair": [
+   "90128B",
+   "90152B"
+  ],
+  "names": [
+   "BLUE LEAVES AND BEADS PHONE CHARM",
+   "BLUE/GREEN SHELL NECKLACE W PENDANT"
+  ],
+  "joint": 1,
+  "counts": [
+   1,
+   1
+  ],
+  "lift": 17080.0,
+  "pairs_lift_over_100": 26048,
+  "of_which_joint_below_10": 25373,
+  "distinct_pairs": 2212425
+ },
+ "pairs_of_frequent_items": {
+  "items": 691,
+  "pairs": 238395,
+  "share_lift_above_1": 0.81782336038927,
+  "median_lift": 1.7256883051275576,
+  "mean_lift": 2.055478919267388
+ },
+ "apriori_levels_1pct": [
+  {
+   "k": 1,
+   "possible": 3653,
+   "frequent": 691
+  },
+  {
+   "k": 2,
+   "possible": 6670378,
+   "joined": 238395,
+   "after_prune": 238395,
+   "frequent": 413
+  },
+  {
+   "k": 3,
+   "possible": 8117850026,
+   "joined": 1163,
+   "after_prune": 675,
+   "frequent": 109
+  },
+  {
+   "k": 4,
+   "possible": 7407538148725,
+   "joined": 130,
+   "after_prune": 60,
+   "frequent": 6
+  },
+  {
+   "k": 5,
+   "possible": 5406021340939505,
+   "joined": 1,
+   "after_prune": 0,
+   "frequent": 0
+  }
+ ],
+ "final_table": {
+  "rules": 950,
+  "pair_rules": 516,
+  "unordered_pairs": 323,
+  "raw_lift_min": 2.6365931141668812,
+  "raw_lift_median": 10.357822323900066,
+  "adj_over_raw_median": 0.5758177434194918,
+  "adj_lift_min": 1.678,
+  "adj_lift_below_2": 3
+ },
+ "customers": {
+  "distinct": 4229,
+  "uk_basket_share": 0.8991803278688525
+ },
+ "holdout": {
+  "early_baskets": 10481,
+  "late_baskets": 6599,
+  "rules_passing_early": 797,
+  "still_passing_late": 467,
+  "share": 0.5859473023839398,
+  "spearman_lift": 0.8425643766403014,
+  "late_lift_above_1": 797
+ }
+}

@@ -1,0 +1,92 @@
+basket size: median 16 mean 22.54 max 540 | share of baskets with >40 items: 0.1396
+top items: [{'stock': '85123A', 'name': 'WHITE HANGING HEART T-LIGHT HOLDER', 'count': 1959, 'share': 0.11469555035128806}, {'stock': '22423', 'name': 'REGENCY CAKESTAND 3 TIER', 'count': 1681, 'share': 0.0984192037470726}, {'stock': '85099B', 'name': 'JUMBO BAG RED RETROSPOT', 'count': 1584, 'share': 0.09274004683840749}]
+
+[useful] 22697 GREEN REGENCY TEACUP AND SAUCER  ->  22699 ROSES REGENCY TEACUP AND SAUCER
+  count(AuB)=541 count(A)=691 count(B)=780 N=17080
+  support=3.1674% confidence=78.2923% lift=17.1440 | reverse confidence=69.3590% lift=17.1440
+  expected joint if independent=31.6 | size-adjusted lift=13.443 (expected 40.24)
+    {'bin': '2-5', 'n': 2640, 'countA': 38, 'countB': 39, 'joint': 21, 'expected': 0.56, 'lift': 37.409}
+    {'bin': '6-10', 'n': 2916, 'countA': 76, 'countB': 74, 'joint': 57, 'expected': 1.93, 'lift': 29.554}
+    {'bin': '11-20', 'n': 4906, 'countA': 160, 'countB': 190, 'joint': 119, 'expected': 6.2, 'lift': 19.204}
+    {'bin': '21-40', 'n': 4233, 'countA': 228, 'countB': 265, 'joint': 191, 'expected': 14.27, 'lift': 13.381}
+    {'bin': '41-80', 'n': 1948, 'countA': 143, 'countB': 158, 'joint': 115, 'expected': 11.6, 'lift': 9.915}
+    {'bin': '81-max', 'n': 437, 'countA': 46, 'countB': 54, 'joint': 38, 'expected': 5.68, 'lift': 6.685}
+
+[misleading] 21754 HOME BUILDING BLOCK WORD  ->  85123A WHITE HANGING HEART T-LIGHT HOLDER
+  count(AuB)=209 count(A)=690 count(B)=1959 N=17080
+  support=1.2237% confidence=30.2899% lift=2.6409 | reverse confidence=10.6687% lift=2.6409
+  expected joint if independent=79.1 | size-adjusted lift=1.917 (expected 109.03)
+    {'bin': '2-5', 'n': 2640, 'countA': 15, 'countB': 97, 'joint': 0, 'expected': 0.55, 'lift': None}
+    {'bin': '6-10', 'n': 2916, 'countA': 53, 'countB': 201, 'joint': 8, 'expected': 3.65, 'lift': 2.19}
+    {'bin': '11-20', 'n': 4906, 'countA': 181, 'countB': 494, 'joint': 38, 'expected': 18.23, 'lift': 2.085}
+    {'bin': '21-40', 'n': 4233, 'countA': 226, 'countB': 570, 'joint': 73, 'expected': 30.43, 'lift': 2.399}
+    {'bin': '41-80', 'n': 1948, 'countA': 158, 'countB': 440, 'joint': 66, 'expected': 35.69, 'lift': 1.849}
+    {'bin': '81-max', 'n': 437, 'countA': 57, 'countB': 157, 'joint': 24, 'expected': 20.48, 'lift': 1.172}
+
+[herb] 22916 HERB MARKER THYME  ->  22917 HERB MARKER ROSEMARY
+  count(AuB)=176 count(A)=186 count(B)=190 N=17080
+  support=1.0304% confidence=94.6237% lift=85.0617 | reverse confidence=92.6316% lift=85.0617
+  expected joint if independent=2.1 | size-adjusted lift=37.118 (expected 4.74)
+    {'bin': '2-5', 'n': 2640, 'countA': 0, 'countB': 0, 'joint': 0, 'expected': 0.0, 'lift': None}
+    {'bin': '6-10', 'n': 2916, 'countA': 7, 'countB': 7, 'joint': 7, 'expected': 0.02, 'lift': 416.571}
+    {'bin': '11-20', 'n': 4906, 'countA': 35, 'countB': 34, 'joint': 32, 'expected': 0.24, 'lift': 131.926}
+    {'bin': '21-40', 'n': 4233, 'countA': 57, 'countB': 60, 'joint': 54, 'expected': 0.81, 'lift': 66.837}
+    {'bin': '41-80', 'n': 1948, 'countA': 58, 'countB': 61, 'joint': 55, 'expected': 1.82, 'lift': 30.283}
+    {'bin': '81-max', 'n': 437, 'countA': 29, 'countB': 28, 'joint': 28, 'expected': 1.86, 'lift': 15.069}
+
+[party] 21080 SET/20 RED RETROSPOT PAPER NAPKINS + 21086 SET/6 RED SPOTTY PAPER CUPS  ->  21094 SET/6 RED SPOTTY PAPER PLATES
+  count(AuB)=177 count(A)=192 count(B)=325 N=17080
+  support=1.0363% confidence=92.1875% lift=48.4481 | reverse confidence=54.4615% lift=48.4481
+  expected joint if independent=3.7 | size-adjusted lift=29.719 (expected 5.96)
+    {'bin': '2-5', 'n': 2640, 'countA': 4, 'countB': 11, 'joint': 4, 'expected': 0.02, 'lift': 240.0}
+    {'bin': '6-10', 'n': 2916, 'countA': 8, 'countB': 23, 'joint': 6, 'expected': 0.06, 'lift': 95.087}
+    {'bin': '11-20', 'n': 4906, 'countA': 48, 'countB': 80, 'joint': 42, 'expected': 0.78, 'lift': 53.659}
+    {'bin': '21-40', 'n': 4233, 'countA': 61, 'countB': 102, 'joint': 57, 'expected': 1.47, 'lift': 38.779}
+    {'bin': '41-80', 'n': 1948, 'countA': 49, 'countB': 74, 'joint': 47, 'expected': 1.86, 'lift': 25.25}
+    {'bin': '81-max', 'n': 437, 'countA': 22, 'countB': 35, 'joint': 21, 'expected': 1.76, 'lift': 11.918}
+lift<=1: ['22727'] ['ALARM CLOCK BAKELIKE RED'] -> ['85123A'] ['WHITE HANGING HEART T-LIGHT HOLDER'] 98 877 1959 conf 11.1745% lift 0.9743
+
+[below1_22727] 22727 ALARM CLOCK BAKELIKE RED  ->  85123A WHITE HANGING HEART T-LIGHT HOLDER
+  count(AuB)=98 count(A)=877 count(B)=1959 N=17080
+  support=0.5738% confidence=11.1745% lift=0.9743 | reverse confidence=5.0026% lift=0.9743
+  expected joint if independent=100.6 | size-adjusted lift=0.718 (expected 136.54)
+    {'bin': '2-5', 'n': 2640, 'countA': 23, 'countB': 97, 'joint': 0, 'expected': 0.85, 'lift': None}
+    {'bin': '6-10', 'n': 2916, 'countA': 81, 'countB': 201, 'joint': 3, 'expected': 5.58, 'lift': 0.537}
+    {'bin': '11-20', 'n': 4906, 'countA': 210, 'countB': 494, 'joint': 14, 'expected': 21.15, 'lift': 0.662}
+    {'bin': '21-40', 'n': 4233, 'countA': 296, 'countB': 570, 'joint': 36, 'expected': 39.86, 'lift': 0.903}
+    {'bin': '41-80', 'n': 1948, 'countA': 201, 'countB': 440, 'joint': 29, 'expected': 45.4, 'lift': 0.639}
+    {'bin': '81-max', 'n': 437, 'countA': 66, 'countB': 157, 'joint': 16, 'expected': 23.71, 'lift': 0.675}
+lift<=1: ['22726'] ['ALARM CLOCK BAKELIKE GREEN'] -> ['85123A'] ['WHITE HANGING HEART T-LIGHT HOLDER'] 89 784 1959 conf 11.3520% lift 0.9898
+
+[below1_22726] 22726 ALARM CLOCK BAKELIKE GREEN  ->  85123A WHITE HANGING HEART T-LIGHT HOLDER
+  count(AuB)=89 count(A)=784 count(B)=1959 N=17080
+  support=0.5211% confidence=11.3520% lift=0.9898 | reverse confidence=4.5431% lift=0.9898
+  expected joint if independent=89.9 | size-adjusted lift=0.727 (expected 122.39)
+    {'bin': '2-5', 'n': 2640, 'countA': 23, 'countB': 97, 'joint': 1, 'expected': 0.85, 'lift': 1.183}
+    {'bin': '6-10', 'n': 2916, 'countA': 73, 'countB': 201, 'joint': 2, 'expected': 5.03, 'lift': 0.397}
+    {'bin': '11-20', 'n': 4906, 'countA': 180, 'countB': 494, 'joint': 13, 'expected': 18.12, 'lift': 0.717}
+    {'bin': '21-40', 'n': 4233, 'countA': 270, 'countB': 570, 'joint': 30, 'expected': 36.36, 'lift': 0.825}
+    {'bin': '41-80', 'n': 1948, 'countA': 176, 'countB': 440, 'joint': 22, 'expected': 39.75, 'lift': 0.553}
+    {'bin': '81-max', 'n': 437, 'countA': 62, 'countB': 157, 'joint': 21, 'expected': 22.27, 'lift': 0.943}
+
+tiny-count trap: {'pair': ('90128B', '90152B'), 'names': ['BLUE LEAVES AND BEADS PHONE CHARM', 'BLUE/GREEN SHELL NECKLACE W PENDANT'], 'joint': 1, 'counts': [1, 1], 'lift': 17080.0, 'pairs_lift_over_100': 26048, 'of_which_joint_below_10': 25373, 'distinct_pairs': 2212425}
+pairs of frequent items: {'items': 691, 'pairs': 238395, 'share_lift_above_1': 0.81782336038927, 'median_lift': 1.7256883051275576, 'mean_lift': 2.055478919267388}
+apriori levels @1%: [{'k': 1, 'possible': 3653, 'frequent': 691}, {'k': 2, 'possible': 6670378, 'joined': 238395, 'after_prune': 238395, 'frequent': 413}, {'k': 3, 'possible': 8117850026, 'joined': 1163, 'after_prune': 675, 'frequent': 109}, {'k': 4, 'possible': 7407538148725, 'joined': 130, 'after_prune': 60, 'frequent': 6}, {'k': 5, 'possible': 5406021340939505, 'joined': 1, 'after_prune': 0, 'frequent': 0}]
+final table: {'rules': 950, 'pair_rules': 516, 'unordered_pairs': 323, 'raw_lift_min': 2.6365931141668812, 'raw_lift_median': 10.357822323900066, 'adj_over_raw_median': 0.5758177434194918, 'adj_lift_min': 1.678, 'adj_lift_below_2': 3}
+
+customers: {'distinct': 4229, 'uk_basket_share': 0.8991803278688525}
+  [useful] 2010-12..2011-05   N= 6804 joint= 270 A= 330 B= 376 sup=3.97% conf=81.82% lift=14.81
+  [useful] 2011-06..2011-12   N=10276 joint= 271 A= 361 B= 404 sup=2.64% conf=75.07% lift=19.09
+  [useful] Q1 Dec-Feb         N= 3104 joint=  97 A= 124 B= 138 sup=3.12% conf=78.23% lift=17.60
+  [useful] Q2 Mar-May         N= 3700 joint= 173 A= 206 B= 238 sup=4.68% conf=83.98% lift=13.06
+  [useful] Q3 Jun-Aug         N= 3677 joint= 113 A= 151 B= 167 sup=3.07% conf=74.83% lift=16.48
+  [useful] Q4 Sep-Dec9        N= 6599 joint= 158 A= 210 B= 237 sup=2.39% conf=75.24% lift=20.95
+  [useful] customers behind the joint baskets: {'joint_baskets': 541, 'distinct_customers': 311, 'top_customer_baskets': 26, 'top5_baskets': 72, 'customers_with_1_basket': 213, 'antecedent_customers': 387}
+  [misleading] 2010-12..2011-05   N= 6804 joint= 121 A= 364 B= 990 sup=1.78% conf=33.24% lift=2.28
+  [misleading] 2011-06..2011-12   N=10276 joint=  88 A= 326 B= 969 sup=0.86% conf=26.99% lift=2.86
+  [misleading] Q1 Dec-Feb         N= 3104 joint=  62 A= 187 B= 476 sup=2.00% conf=33.16% lift=2.16
+  [misleading] Q2 Mar-May         N= 3700 joint=  59 A= 177 B= 514 sup=1.59% conf=33.33% lift=2.40
+  [misleading] Q3 Jun-Aug         N= 3677 joint=  42 A= 139 B= 389 sup=1.14% conf=30.22% lift=2.86
+  [misleading] Q4 Sep-Dec9        N= 6599 joint=  46 A= 187 B= 580 sup=0.70% conf=24.60% lift=2.80
+  [misleading] customers behind the joint baskets: {'joint_baskets': 209, 'distinct_customers': 126, 'top_customer_baskets': 11, 'top5_baskets': 37, 'customers_with_1_basket': 85, 'antecedent_customers': 360}
+hold-out: {'early_baskets': 10481, 'late_baskets': 6599, 'rules_passing_early': 797, 'still_passing_late': 467, 'share': 0.5859473023839398, 'spearman_lift': 0.8425643766403014, 'late_lift_above_1': 797}

@@ -1,0 +1,11 @@
+# local verification environment and downloaded raw data (see analysis/rebuild_from_raw.py)
+analysis/.venv/
+analysis/raw/
+analysis/__pycache__/
+# large generated dump; re-create with `node tests/export_results.js`
+analysis/js_results.json
+# instructor's generator, kept locally for reference only
+analysis/build_week4_data_instructor.py
+# the report is submitted separately
+report/
+.DS_Store

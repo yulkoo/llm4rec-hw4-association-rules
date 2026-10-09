@@ -1,0 +1,3 @@
+run 1: findFrequentItemsets (all levels) 87 ms -> 1219 itemsets | pairs only via countPair 1928 ms (413 frequent) | pairs only via one horizontal scan 331 ms (413 frequent) | generateRules 2.1 ms -> 950 rules
+run 2: findFrequentItemsets (all levels) 86 ms -> 1219 itemsets | pairs only via countPair 1918 ms (413 frequent) | pairs only via one horizontal scan 362 ms (413 frequent) | generateRules 1.8 ms -> 950 rules
+run 3: findFrequentItemsets (all levels) 82 ms -> 1219 itemsets | pairs only via countPair 1918 ms (413 frequent) | pairs only via one horizontal scan 352 ms (413 frequent) | generateRules 1.8 ms -> 950 rules

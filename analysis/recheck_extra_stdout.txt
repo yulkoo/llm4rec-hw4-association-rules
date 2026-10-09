@@ -1,0 +1,5 @@
+raw workbook: 22697 'GREEN REGENCY TEACUP AND SAUCER' -> 22699 'ROSES REGENCY TEACUP AND SAUCER ': joint 541, A 691, B 780, N 17080 | support 0.031674 confidence 0.782923 lift 17.1440
+raw workbook: 22727 'ALARM CLOCK BAKELIKE RED ' -> 85123A 'WHITE HANGING HEART T-LIGHT HOLDER': joint 98, A 877, B 1959, N 17080 | support 0.005738 confidence 0.111745 lift 0.9743
+raw workbook: 21754 'HOME BUILDING BLOCK WORD' -> 85123A 'WHITE HANGING HEART T-LIGHT HOLDER': joint 209, A 690, B 1959, N 17080 | support 0.012237 confidence 0.302899 lift 2.6409
+raw workbook: 22916 'HERB MARKER THYME' -> 22917 'HERB MARKER ROSEMARY': joint 176, A 186, B 190, N 17080 | support 0.010304 confidence 0.946237 lift 85.0617
+null model (independent items, same frequencies, 691 items, 238395 pairs, 5 draws): median lift 0.973 (range 0.973-0.974), share with lift > 1: 0.472

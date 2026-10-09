@@ -1,0 +1,19 @@
+[app] opened file://./app/index.html
+summary: 17,080 baskets · 3,653 distinct items
+status : Dataset ready: 17,080 baskets, 3,653 distinct items. Set the thresholds and press “Run rules”.
+tests  : HW4 self-checks — pass 11, fail 0, pending 0 (of 11)
+sliders 1/30 -> click took 66 ms
+status : Done — 950 rule(s) at support ≥ 1.0% and confidence ≥ 30%.
+rows   : 950 | 950 rules.
+row 1  : 22916 — HERB MARKER THYME	22917 — HERB MARKER ROSEMARY	176	186	190	1.03%	94.62%	85.0617
+lift<=1 rows in table: 0
+detail : Antecedent (A) | 22697 — GREEN REGENCY TEACUP AND SAUCER | Consequent (B) | 22699 — ROSES REGENCY TEACUP AND SAUCER | count(A∪B) | 541 | count(A) | 691 | count(B) | 780 | support | 3.17% | confidence | 78.29% | lift | 17.1440 | Reverse direction (B → A): confidence 69.36%, lift 17.1440. Confidence changes with direction; lift does not. | Reverse direction (B → A)
+reverse: Antecedent (A) | 22699 — ROSES REGENCY TEACUP AND SAUCER | Consequent (B) | 22697 — GREEN REGENCY TEACUP AND SAUCER | count(A∪B) | 541 | count(A) | 780 | count(B) | 691 | support | 3.17% | confidence | 69.36% | lift | 17.1440 | Reverse direction (B → A): confidence 78.29%, lift 17.1440. Confidence changes with direction; lift does not. | Reverse direction (B → A)
+sliders 0.5/10 -> click took 1945 ms | Done — 19058 rule(s) at support ≥ 0.5% and confidence ≥ 10%.
+reject : Antecedent (A) | 22727 — ALARM CLOCK BAKELIKE RED | Consequent (B) | 85123A — WHITE HANGING HEART T-LIGHT HOLDER | count(A∪B) | 98 | count(A) | 877 | count(B) | 1959 | support | 0.57% | confidence | 11.17% | lift | 0.9743 | Reverse direction (B → A): confidence 5.00%, lift 0.9743. Confidence changes with direction; lift does not. | Reverse direction (B → A)
+lift<=1 rows in table: 2
+sliders 3/60 -> click took 208 ms | Done — 5 rule(s) at support ≥ 3.0% and confidence ≥ 60%.
+3%/60% table: 22697 — GREEN REGENCY TEACUP AND SAUCER	22699 — ROSES REGENCY TEACUP AND SAUCER	541	691	780	3.17%	78.29%	17.1440 | 22699 — ROSES REGENCY TEACUP AND SAUCER	22697 — GREEN REGENCY TEACUP AND SAUCER	541	780	691	3.17%	69.36%	17.1440 | 22727 — ALARM CLOCK BAKELIKE RED	22726 — ALARM CLOCK BAKELIKE GREEN	530	877	784	3.10%	60.43%	13.1658 | 22726 — ALARM CLOCK BAKELIKE GREEN	22727 — ALARM CLOCK BAKELIKE RED	530	784	877	3.10%	67.60%	13.1658 | 22386 — JUMBO BAG PINK POLKADOT	85099B — JUMBO BAG RED RETROSPOT	546	869	1584	3.20%	62.83%	6.7749
+sliders 10/100 -> click took 48 ms | Done — 0 rule(s) at support ≥ 10.0% and confidence ≥ 100%. | No rules passed the current thresholds. Lower the minimum support or confidence and run again.
+mobile horizontal overflow: false
+console messages/errors: none

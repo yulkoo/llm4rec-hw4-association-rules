@@ -1,0 +1,6 @@
+basket matrix: 17080 invoices x 3653 items, 384911 ones
+brute force: 3653 items, 2212425 distinct co-occurring pairs
+support>=0.005  conf>=0.1  | itemsets JS  5255 / FP-Growth  5255 identical(sets+counts): True | 1-2-itemsets vs brute force (3526): True | rules JS 19058 / mlxtend 19058 same keys: True max|diff| 2.84e-14
+support>=0.01   conf>=0.1  | itemsets JS  1219 / FP-Growth  1219 identical(sets+counts): True | 1-2-itemsets vs brute force (1104): True | rules JS  1555 / mlxtend  1555 same keys: True max|diff| 1.42e-14
+support>=0.01   conf>=0.3  | itemsets JS  1219 / FP-Growth  1219 identical(sets+counts): True | 1-2-itemsets vs brute force (1104): True | rules JS   950 / mlxtend   950 same keys: True max|diff| 1.42e-14
+support>=0.03   conf>=0.6  | itemsets JS   115 / FP-Growth   115 identical(sets+counts): True | 1-2-itemsets vs brute force (115): True | rules JS     5 / mlxtend     5 same keys: True max|diff| 3.55e-15

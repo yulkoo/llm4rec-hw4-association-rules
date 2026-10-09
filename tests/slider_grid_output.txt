@@ -1,0 +1,2 @@
+positions 380 | support-boundary mismatches vs exact integers: 0 | confidence-boundary mismatches: 0
+positions with any lift<=1 rule: 0.5%/10%:2

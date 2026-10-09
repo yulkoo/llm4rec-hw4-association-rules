@@ -1,0 +1,10 @@
+useful 22697->22699: conf 78.2923% 95% CI [75.07%, 81.21%] baseline P(B) 4.5667% expected joint 31.6 lift 17.1440 chi2 8981.39 | A without B 150 | B without A 239
+reject 22727->85123A: conf 11.1745% 95% CI [9.26%, 13.43%] baseline P(B) 11.4696% expected joint 100.6 lift 0.9743 chi2 0.08 | A without B 779 | B without A 1861
+weak 21754->85123A: conf 30.2899% 95% CI [26.98%, 33.82%] baseline P(B) 11.4696% expected joint 79.1 lift 2.6409 chi2 250.83 | A without B 481 | B without A 1750
+herb 22916->22917: conf 94.6237% 95% CI [90.39%, 97.05%] baseline P(B) 1.1124% expected joint 2.1 lift 85.0617 chi2 14948.19 | A without B 10 | B without A 14
+lift lower bound at confidence 10%: 0.872
+lift lower bound at confidence 30%: 2.616
+lift lower bound at confidence 50%: 4.359
+lift lower bound at confidence 60%: 5.231
+lift lower bound at confidence 80%: 6.975
+min support 1% -> 171 baskets; 0.5% -> 86 ; SE of a confidence estimated on 171 baskets <= 3.82 pp

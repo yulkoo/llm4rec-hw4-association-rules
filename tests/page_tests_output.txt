@@ -1,0 +1,14 @@
+[app]
+HW4 self-checks — pass 11, fail 0, pending 0 (of 11)
+
+PASS    fixture: item counts match the hand-computed values — all five item counts correct
+PASS    fixture: bread -> milk has lift exactly 1 — support=0.6000 confidence=0.6000 lift=1.0000
+PASS    fixture: milk -> jam has lift greater than 1 — lift=1.1111 (> 1)
+PASS    fixture: jam -> eggs has lift less than 1 — lift=0.8333 (0 < lift < 1)
+PASS    fixture: reversed confidence differs (jam <-> eggs) — jam->eggs=0.3333 vs eggs->jam=0.5000
+PASS    duplicate items in a raw basket are counted once — dedupeBasket removed repeats; counting is per basket
+PASS    empty rule set renders an empty-state note — empty state rendered
+PASS    invalid thresholds are rejected — valid accepted, invalid rejected
+PASS    zero-denominator guards return undefined metrics — zero denominators return defined=false
+PASS    findFrequentItemsets reproduces the fixture's frequent itemsets — 9 itemsets
+PASS    generateRules reproduces the fixture's rules — 38 rules

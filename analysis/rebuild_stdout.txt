@@ -1,0 +1,7 @@
+sha256 matches readme: True 43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d
+raw rows: 541909 | date range: 2010-12-01 08:26:00 -> 2011-12-09 12:50:00
+rows 541909 -> kept (invoice, stock) pairs 384911 | baskets 17080 | items 3653
+starter: baskets 17080 | rows 384911 | items 3653
+identical basket-by-basket, in file order: True
+baskets per month: {'2010-12': 1261, '2011-01': 915, '2011-02': 928, '2011-03': 1234, '2011-04': 1052, '2011-05': 1414, '2011-06': 1271, '2011-07': 1237, '2011-08': 1169, '2011-09': 1642, '2011-10': 1769, '2011-11': 2468, '2011-12': 720}
+top items by basket count: {'85123A': np.int64(1959), '22423': np.int64(1681), '85099B': np.int64(1584)}

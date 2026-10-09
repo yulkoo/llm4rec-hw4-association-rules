@@ -1,0 +1,29 @@
+PASS  1. page self-checks: 11 pass, 0 fail, 0 pending — 11/11
+PASS  2. dedupeBasket: order, mixed strings/objects, empty input — b,a,c
+PASS  3. countItemset contract: empty request, unknown stock, repeated stock, index or array input
+PASS  4. slide 8 example: A∪B=3, A=5, B=5, N=8 -> 37.5%, 60%, lift 0.96 — lift=0.96
+PASS  5. slide 11 example: confidence 3/5 vs 3/6 differs by direction, lift does not — 60% vs 50%
+PASS  6. zero denominators: defined=false and value 0, never NaN/Infinity
+PASS  7. fixture itemsets equal brute-force enumeration at 5 thresholds — sizes 19/9/5/1/1
+PASS  8. support threshold is inclusive (count 2 of 5 passes minSupport 0.4)
+PASS  9. fixture rules equal brute force; hand values for milk->jam and bread->milk — 38 rules
+PASS 10. 200 random datasets: itemsets and rules equal brute force — 1352 itemsets, 1090 rules compared
+PASS 11. real data anchors: 17,080 baskets, 3,653 items, 85123A in 1,959 baskets (11.47%)
+PASS 12. real data, 1% support: every itemset meets the threshold and its count equals countItemset — 1219 itemsets
+PASS 13. real data: downward closure holds (every subset of a frequent itemset is listed, with count >= superset) — 1177 subset checks
+PASS 14. real data: no frequent pair is missed (all pairs of frequent items re-counted) — 413 frequent of 238395 pairs
+PASS 15. real data: every rule passes both thresholds and its metrics equal the definitions — 950 rules
+PASS 16. real data: both directions are generated; lift and support are symmetric, confidence is not — 1564 rules, confidence differs in 1564
+PASS 17. hand-computed rule 22697 -> 22699: 541/691/780 -> 3.1674%, 78.2923%, lift 17.1440 — reverse 69.36%, lift 17.1440
+PASS 18. detail panel: unknown antecedent shows the inline zero-denominator note, no NaN/Infinity
+PASS 19. generateRules tolerates an incomplete itemset list and an empty list
+PASS 20. thresholds are monotone: raising either one never adds itemsets or rules — 1219 >= 294 >= 115 >= 27
+PASS 21. starter defect: undefined metrics are shown as "undefined", not as 0.00% / 0.0000 (detail, reverse line, table row) — confidence/lift undefined, support 0.00%
+PASS 22. starter defect: a defined rule is rendered exactly as before (no "undefined" anywhere)
+PASS 23. starter defect: a new run clears the "Selected rule" panel instead of leaving a stale rule — 5 rules, panel reset
+PASS 24. starter defect: rule tables sit in a horizontal scroll container; provenance correction is shown
+PASS 25. freeze fix: level 2 counted by one pass over the baskets equals pair-by-pair counting (0.5% support: 2,206 pairs of 870,540) — 2206 pairs equal; 59954 sampled pairs agree
+PASS 26. freeze fix: runPipeline reports progress, ends with "Done" and re-enables the button
+PASS 27. starter defect (accessibility): slider readout is not a live region; the slider carries the value as aria-valuetext — 6.5% / 85%
+
+27 passed, 0 failed

@@ -1,0 +1,14 @@
+[starter_original]
+HW4 self-checks — pass 2, fail 0, pending 9 (of 11)
+
+PENDING fixture: item counts match the hand-computed values — TODO(hw4): not implemented yet.
+PENDING fixture: bread -> milk has lift exactly 1 — TODO(hw4): not implemented yet.
+PENDING fixture: milk -> jam has lift greater than 1 — TODO(hw4): not implemented yet.
+PENDING fixture: jam -> eggs has lift less than 1 — TODO(hw4): not implemented yet.
+PENDING fixture: reversed confidence differs (jam <-> eggs) — TODO(hw4): not implemented yet.
+PENDING duplicate items in a raw basket are counted once — TODO(hw4): not implemented yet.
+PASS    empty rule set renders an empty-state note — empty state rendered
+PASS    invalid thresholds are rejected — valid accepted, invalid rejected
+PENDING zero-denominator guards return undefined metrics — TODO(hw4): not implemented yet.
+PENDING findFrequentItemsets reproduces the fixture's frequent itemsets — TODO(hw4): not implemented yet.
+PENDING generateRules reproduces the fixture's rules — TODO(hw4): not implemented yet.

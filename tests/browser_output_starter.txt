@@ -1,0 +1,10 @@
+[starter_original] opened file://./starter_original/index.html
+summary: 17,080 baskets · 3,653 distinct items
+status : Dataset ready: 17,080 baskets, 3,653 distinct items. Implement the TODO(hw4) functions, then press “Run rules”.
+tests  : HW4 self-checks — pass 2, fail 0, pending 9 (of 11)
+sliders 1/30 -> click took 1 ms
+status : TODO(hw4): findFrequentItemsets is not implemented yet.
+rows   : 0 | undefined
+results: Run failed — the rule miner did not complete. Implement the TODO(hw4) functions, then press “Run rules”. Error: TODO(hw4): findFrequentItemsets is not implemented yet.
+mobile horizontal overflow: false
+console messages/errors: none

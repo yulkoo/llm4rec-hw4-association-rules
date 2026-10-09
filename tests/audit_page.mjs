@@ -1,0 +1,46 @@
+// Audit of the page behaviour in headless Chrome. Usage: node tests/audit_page.mjs [app|starter_original]
+import { spawn } from 'node:child_process'; import fs from 'node:fs'; import path from 'node:path'; import os from 'node:os';
+const dir = process.argv[2] || 'app';
+const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const proc = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', ['--headless=new', '--remote-debugging-port=9336', '--user-data-dir=' + fs.mkdtempSync(path.join(os.tmpdir(), 'hw4-audit-')), '--window-size=1280,1000', 'about:blank'], { stdio: 'ignore' });
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+let tabs; for (let i = 0; i < 50; i++) { try { tabs = await (await fetch('http://127.0.0.1:9336/json')).json(); break; } catch { await sleep(200); } }
+const ws = new WebSocket(tabs.find((t) => t.type === 'page').webSocketDebuggerUrl); await new Promise((r) => (ws.onopen = r));
+let id = 0; const pending = {}; const logs = [];
+ws.onmessage = (e) => { const m = JSON.parse(e.data); if (m.id && pending[m.id]) { pending[m.id](m); delete pending[m.id]; } if (m.method === 'Runtime.exceptionThrown') logs.push(JSON.stringify(m.params).slice(0, 200)); };
+const send = (method, params = {}) => new Promise((r) => { const i = ++id; pending[i] = r; ws.send(JSON.stringify({ id: i, method, params })); });
+const ev = async (expr) => { const r = (await send('Runtime.evaluate', { expression: expr, returnByValue: true })).result; return r.exceptionDetails ? 'EXCEPTION ' + r.exceptionDetails.exception.description.split('\n')[0] : r.result.value; };
+const set = async (s, c) => { await ev(`(()=>{const a=document.getElementById('min-support'), b=document.getElementById('min-confidence'); a.value='${s}'; b.value='${c}'; a.dispatchEvent(new Event('input')); b.dispatchEvent(new Event('input')); document.getElementById('run-rules').click(); return 1;})()`);
+  for (let i = 0; i < 600; i++) { const st = await ev("document.getElementById('status').textContent"); if (/^Done|not implemented|must be/.test(st)) return st; await sleep(25); } return 'TIMEOUT'; };
+const detail = () => ev("document.getElementById('rule-detail').innerText.replace(/\\n+/g,' | ').slice(0,260)");
+await send('Runtime.enable'); await send('Page.enable');
+await send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 1000, deviceScaleFactor: 1, mobile: false });
+await send('Page.navigate', { url: 'file://' + path.join(root, dir, 'index.html') }); await sleep(1500);
+console.log(`[${dir}]`);
+console.log('A. provenance lines:', await ev("[...document.querySelectorAll('.provenance')].map(p=>p.textContent).join(' || ')"));
+console.log('B. run 1%/30%      :', await set(1, 30));
+await ev("document.querySelector('#results tbody tr').click()");
+console.log('   selected        :', await detail());
+console.log('   run 3%/60%      :', await set(3, 60));
+console.log('   panel after the new run (is the old rule still shown?):', await detail());
+console.log('   is that rule in the new table?', await ev("(()=>{const dd=document.querySelector('#rule-detail dd'); if(!dd) return 'n/a (panel is empty)'; const a=dd.textContent; return [...document.querySelectorAll('#results tbody tr')].some(r=>r.cells[0].textContent===a);})()"));
+console.log('C. undefined metrics, A never occurs:', await ev("(()=>{const d=document.createElement('div'); renderRuleDetail({antecedent:['NO-SUCH-CODE'],consequent:['85123A']}, DATASET_INDEX, d); return d.innerText.replace(/\\n+/g,' | ');})()"));
+console.log('   undefined metrics, B never occurs:', await ev("(()=>{const d=document.createElement('div'); renderRuleDetail({antecedent:['85123A'],consequent:['NO-SUCH-CODE']}, DATASET_INDEX, d); return d.innerText.replace(/\\n+/g,' | ');})()"));
+console.log('   same rule as a table row         :', await ev("(()=>{const d=document.createElement('div'); renderResults([{antecedent:['NO-SUCH-CODE'],consequent:['85123A']}], DATASET_INDEX, d); return d.querySelector('tbody tr').innerText.replace(/\\t/g,' | ');})()"));
+console.log('D. keyboard: Enter on a focused row selects it:', await ev("(()=>{document.getElementById('rule-detail').innerHTML=''; const r=document.querySelectorAll('#results tbody tr')[1]; r.focus(); r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true})); return document.getElementById('rule-detail').innerText.length>0;})()"));
+await set(1, 30);
+await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 800, deviceScaleFactor: 2, mobile: true }); await sleep(300);
+console.log('E. 390 px wide, 950 rules shown: page scrollWidth', await ev('document.documentElement.scrollWidth'), 'vs viewport', await ev('window.innerWidth'), '| table width', await ev("Math.round(document.querySelector('#results table').getBoundingClientRect().width)"), '| its container', await ev("Math.round(document.querySelector('#results').getBoundingClientRect().width)"), '| container overflow-x:', await ev("getComputedStyle(document.querySelector('#results')).overflowX"));
+await send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 1000, deviceScaleFactor: 1, mobile: false });
+console.log('H. run 0.5%/10%    :', await set(0.5, 10), '| rows', await ev("document.querySelectorAll('#results tbody tr').length"), '| run button enabled again:', await ev("!document.getElementById('run-rules').disabled"));
+console.log('   column edges equal in every chunk table:', await ev("(()=>{const ts=[...document.querySelectorAll('#results table')]; const edges=t=>[...t.querySelector('tbody tr').cells].map(c=>Math.round(c.getBoundingClientRect().right)).join(','); const e0=edges(ts[0]); return ts.length+' tables, all aligned: '+ts.every(t=>edges(t)===e0);})()"));
+console.log('   rows are in rule order 0..n-1:', await ev("[...document.querySelectorAll('#results tbody tr')].every((r,i)=>Number(r.dataset.ruleIndex)===i)"));
+console.log('   click on row 12,345 (a later chunk):', await ev("(()=>{const r=document.querySelectorAll('#results tbody tr')[12345]; r.click(); const dd=[...document.querySelectorAll('#rule-detail dd')].map(d=>d.textContent); return dd[0]===r.cells[0].textContent && dd[1]===r.cells[1].textContent && dd[2]===r.cells[2].textContent;})()"));
+console.log('   Enter on row 18,000:', await ev("(()=>{const r=document.querySelectorAll('#results tbody tr')[18000]; r.focus(); r.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true})); return document.querySelector('#rule-detail dd').textContent===r.cells[0].textContent;})()"));
+await ev("document.querySelectorAll('#results tbody tr')[998].scrollIntoView({block:'start'})"); await sleep(200);
+{ const r = await send('Page.captureScreenshot', { format: 'png' }); fs.writeFileSync(path.join(root, 'tests', 'chunk_boundary.png'), Buffer.from(r.result.data, 'base64')); }
+await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 800, deviceScaleFactor: 2, mobile: true }); await sleep(300);
+console.log('   390 px wide, 19,058 rules: page scrollWidth', await ev('document.documentElement.scrollWidth'), 'vs viewport', await ev('window.innerWidth'));
+console.log('F. noscript/.load-error and .warning colours:', await ev("(()=>{const p=document.createElement('p'); p.className='warning'; document.body.appendChild(p); const c=getComputedStyle(p); const r=c.color+' on '+c.backgroundColor; p.className='load-error'; const c2=getComputedStyle(p); return r+' | load-error: '+c2.color+' on '+c2.backgroundColor;})()"));
+console.log('G. page exceptions:', logs.length ? logs : 'none');
+ws.close(); proc.kill();

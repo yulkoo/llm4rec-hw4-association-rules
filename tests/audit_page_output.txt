@@ -1,0 +1,29 @@
+[app]
+A. provenance lines: UCI Online Retail (dataset_id 352). Daqing Chen, Sai Liang Sain, Kun Guo (2012). 541,909 raw rows cleaned to 384,911 rows and 17,080 baskets by removing cancellations, negative quantities/prices, blank descriptions, non-product codes, and single-item baskets. || Correction (HW4): the second author of the source paper is Sai Laing Sain (J. Database Marketing & Customer Strategy Management 19(3), 2012). The cleaning also removed guest checkouts (blank CustomerID): 132,219 raw rows, the largest single filter.
+B. run 1%/30%      : Done — 950 rule(s) at support ≥ 1.0% and confidence ≥ 30%.
+   selected        : Antecedent (A) | 22916 — HERB MARKER THYME | Consequent (B) | 22917 — HERB MARKER ROSEMARY | count(A∪B) | 176 | count(A) | 186 | count(B) | 190 | support | 1.03% | confidence | 94.62% | lift | 85.0617 | Reverse direction (B → A): confidence 92.63%, lift 85.061
+   run 3%/60%      : Done — 5 rule(s) at support ≥ 3.0% and confidence ≥ 60%.
+   panel after the new run (is the old rule still shown?): Click a rule row to inspect it.
+   is that rule in the new table? n/a (panel is empty)
+C. undefined metrics, A never occurs:  |      |       Antecedent (A)NO-SUCH-CODE |       Consequent (B)85123A — WHITE HANGING HEART T-LIGHT HOLDER |       count(A∪B)0 |       count(A)0 |       count(B)1959 |       support0.00% |       confidenceundefined |       liftundefined |      |      |       Reverse direction (B → A): confidence |       0.00%, lift |       undefined. |       Confidence changes with direction; lift does not. |      |     count(A) = 0, so confidence(A → B) and lift are undefined (division by zero). |     Reverse direction (B → A) |   
+   undefined metrics, B never occurs:  |      |       Antecedent (A)85123A — WHITE HANGING HEART T-LIGHT HOLDER |       Consequent (B)NO-SUCH-CODE |       count(A∪B)0 |       count(A)1959 |       count(B)0 |       support0.00% |       confidence0.00% |       liftundefined |      |      |       Reverse direction (B → A): confidence |       undefined, lift |       undefined. |       Confidence changes with direction; lift does not. |      |     count(B) = 0, so lift and the reverse confidence(B → A) are undefined (division by zero). |     Reverse direction (B → A) |   
+   same rule as a table row         : 
+          NO-SUCH-CODE
+          85123A — WHITE HANGING HEART T-LIGHT HOLDER
+          0
+          0
+          1959
+          0.00%
+          undefined
+          undefined
+        
+D. keyboard: Enter on a focused row selects it: true
+E. 390 px wide, 950 rules shown: page scrollWidth 390 vs viewport 390 | table width 769 | its container 332 | container overflow-x: visible
+H. run 0.5%/10%    : Done — 19058 rule(s) at support ≥ 0.5% and confidence ≥ 10%. | rows 19058 | run button enabled again: true
+   column edges equal in every chunk table: 20 tables, all aligned: true
+   rows are in rule order 0..n-1: true
+   click on row 12,345 (a later chunk): true
+   Enter on row 18,000: true
+   390 px wide, 19,058 rules: page scrollWidth 390 vs viewport 390
+F. noscript/.load-error and .warning colours: rgb(122, 75, 0) on rgb(255, 245, 224) | load-error: rgb(28, 33, 40) on rgba(0, 0, 0, 0)
+G. page exceptions: none
